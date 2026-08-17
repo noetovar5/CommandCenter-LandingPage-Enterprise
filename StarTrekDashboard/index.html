@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noe Tovar | Enterprise Command Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stars"></div>
+  <main class="shell">
+    <header class="lcars-header">
+      <div class="header-left">
+        <div class="pill orange"></div>
+        <div class="pill purple"></div>
+        <div class="pill tan"></div>
+      </div>
+      <section class="title-block">
+        <p class="eyebrow">LCARS PERSONAL OPERATIONS GRID</p>
+        <h1>Enterprise Command Center</h1>
+        <p class="subtitle">Daily dashboard for IT, publishing, learning, cloud, and productivity.</p>
+      </section>
+      <div class="header-status">
+        <span id="stardate">STARDATE --</span>
+        <span id="clock">--:--</span>
+      </div>
+    </header>
+
+    <section class="dashboard-grid">
+      <aside class="left-rail panel">
+        <div class="rail-cap">ACCESS</div>
+        <a href="https://mail.google.com" target="_blank" class="lcars-btn orange">Gmail</a>
+        <a href="https://calendar.google.com" target="_blank" class="lcars-btn peach">Calendar</a>
+        <a href="https://chatgpt.com" target="_blank" class="lcars-btn purple">ChatGPT</a>
+        <a href="https://www.linkedin.com" target="_blank" class="lcars-btn blue">LinkedIn</a>
+        <a href="https://github.com/noetovar5" target="_blank" class="lcars-btn tan">GitHub</a>
+        <a href="https://kdp.amazon.com" target="_blank" class="lcars-btn orange">Amazon KDP</a>
+        <a href="https://books.tovartech.org" target="_blank" class="lcars-btn purple">Bookstore</a>
+        <a href="https://noetovar.com" target="_blank" class="lcars-btn peach">NoeTovar.com</a>
+        <div class="rail-footer">COMMAND LINKS</div>
+      </aside>
+
+      <section class="main-display panel">
+        <div class="section-heading">
+          <span>MISSION CONTROL</span>
+          <span class="small">ONLINE</span>
+        </div>
+        <div class="hero-card">
+          <div>
+            <p class="eyebrow">TODAY'S OPERATIONS</p>
+            <h2>Welcome aboard, Noe.</h2>
+            <p>This dashboard is designed to be your browser homepage: one place for your tools, learning links, book publishing work, and technical resources.</p>
+          </div>
+          <div class="scanner" aria-label="animated scanner display">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="cards">
+          <article class="info-card">
+            <h3>IT Operations</h3>
+            <p>Quick access to Linux, cloud, cybersecurity, virtualization, and enterprise support resources.</p>
+            <div class="mini-links">
+              <a href="https://learn.microsoft.com" target="_blank">Microsoft Learn</a>
+              <a href="https://docs.aws.amazon.com" target="_blank">AWS Docs</a>
+              <a href="https://access.redhat.com/documentation" target="_blank">Red Hat Docs</a>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>Publishing Bay</h3>
+            <p>Manage book publishing, promotions, articles, covers, descriptions, keywords, and training products.</p>
+            <div class="mini-links">
+              <a href="https://kdp.amazon.com" target="_blank">KDP</a>
+              <a href="https://www.canva.com" target="_blank">Canva</a>
+              <a href="https://books.tovartech.org" target="_blank">Bookstore</a>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>Learning Console</h3>
+            <p>Continue developing skills in Linux, cloud computing, SQL Server, APIs, and automation.</p>
+            <div class="mini-links">
+              <a href="https://www.youtube.com" target="_blank">YouTube</a>
+              <a href="https://www.coursera.org" target="_blank">Coursera</a>
+              <a href="https://www.udemy.com" target="_blank">Udemy</a>
+            </div>
+          </article>
+        </div>
+
+        <section class="video-zone">
+          <div class="section-heading">
+            <span>BRIDGE VISUAL FEED</span>
+            <span class="small">LCARS ANIMATION</span>
+          </div>
+          <div class="video-frame">
+            <iframe src="https://hidashboards.apps.ssfcu.org/40" title="LCARS animation" allowfullscreen></iframe>
+          </div>
+        </section>
+      </section>
+
+      <aside class="right-rail panel">
+        <div class="section-heading">
+          <span>STATUS</span>
+          <span class="small">SYNC</span>
+        </div>
+        <div class="status-card">
+          <p>Local Time</p>
+          <strong id="big-clock">--:--</strong>
+        </div>
+        <div class="status-card">
+          <p>System Mode</p>
+          <strong>Productivity</strong>
+        </div>
+        <div class="status-card">
+          <p>Daily Focus</p>
+          <strong>Build • Learn • Publish</strong>
+        </div>
+        <div class="notes-box">
+          <label for="notes">Captain's Notes</label>
+          <textarea id="notes" placeholder="Write quick reminders here. They save in this browser."></textarea>
+        </div>
+        <button id="clearNotes" class="action-btn">Clear Notes</button>
+      </aside>
+    </section>
+
+    <section class="quick-grid panel">
+      <div class="section-heading">
+        <span>RESOURCE GRID</span>
+        <span class="small">FAST ACCESS</span>
+      </div>
+      <div class="resource-buttons">
+        <a href="https://portal.azure.com" target="_blank">Azure Portal</a>
+        <a href="https://console.aws.amazon.com" target="_blank">AWS Console</a>
+        <a href="https://cloud.google.com" target="_blank">Google Cloud</a>
+        <a href="https://www.office.com" target="_blank">Microsoft 365</a>
+        <a href="https://www.vmware.com/support.html" target="_blank">VMware</a>
+        <a href="https://www.proxmox.com/en/proxmox-virtual-environment/overview" target="_blank">Proxmox</a>
+        <a href="https://www.linux.org" target="_blank">Linux</a>
+        <a href="https://www.cisco.com/c/en/us/support/index.html" target="_blank">Cisco</a>
+        <a href="https://www.reddit.com/r/sysadmin/" target="_blank">Sysadmin</a>
+        <a href="https://www.bleepingcomputer.com" target="_blank">Security News</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>Design by Noe Tovar</span>
+      <span>Enterprise Command Center • LCARS Inspired Personal Dashboard</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
